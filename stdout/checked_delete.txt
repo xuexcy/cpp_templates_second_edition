@@ -1,0 +1,12 @@
+Start main: /Users/xuechengyun/code/cpp/cpp_cmake_project_template/build/output/bin/checked_delete
+
+Start bad_case
+start delete Object
+End bad_case
+
+Start solution
+start checked_delete Object
+Object::~Object()
+End solution
+Finished main: /Users/xuechengyun/code/cpp/cpp_cmake_project_template/build/output/bin/checked_delete
+

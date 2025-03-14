@@ -1,0 +1,4 @@
+Start main: /Users/xuechengyun/code/cpp/cpp_cmake_project_template/build/output/bin/inline_guard_macro
+void Foo::fun()
+Finished main: /Users/xuechengyun/code/cpp/cpp_cmake_project_template/build/output/bin/inline_guard_macro
+

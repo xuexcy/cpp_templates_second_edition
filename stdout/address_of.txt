@@ -1,0 +1,5 @@
+Start main: /Users/xuechengyun/code/cpp/cpp_cmake_project_template/build/output/bin/address_of
+address of na is 0x16cfb2ebb
+address of na is 0x16cfb2ebb
+Finished main: /Users/xuechengyun/code/cpp/cpp_cmake_project_template/build/output/bin/address_of
+

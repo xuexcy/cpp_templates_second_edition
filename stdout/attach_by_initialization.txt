@@ -1,0 +1,8 @@
+Start main: /Users/xuechengyun/code/cpp/cpp_cmake_project_template/build/output/bin/attach_by_initialization
+Initialize MessageQueue finished! local uuid: 123455, message_queue address: 127.0.0.1:9092
+Start server
+Send to message_queue success, key: server_name, msg: attach_by_initialization
+Quit server
+Destroy MessageQueue
+Finished main: /Users/xuechengyun/code/cpp/cpp_cmake_project_template/build/output/bin/attach_by_initialization
+

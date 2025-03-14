@@ -1,0 +1,6 @@
+const T &max(const T &, const T &, const T &) [T = int]
+const T &max(const T &, const T &) [T = int]
+const T &max(const T &, const T &) [T = int]
+const T &max(const T &, const T &, const T &) [T = const char *]
+const char *max(const char *, const char *)
+const char *max(const char *, const char *)

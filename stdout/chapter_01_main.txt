@@ -1,0 +1,16 @@
+void run_max()
+T max(T, T) [T = int]
+max(7, i): 42
+T max(T, T) [T = double]
+max(f1, f2): 3.4
+T max(T, T) [T = std::string]
+max(s1, s2): mathematics
+void foo_by_value(T, T) [T = int]
+void foo_by_value(T, T) [T = int]
+void foo_by_value(T, T) [T = int]
+void foo_by_value(T, T) [T = int *]
+void foo_by_value(T, T) [T = double]
+void foo_by_value(T, T) [T = double]
+void foo_with_default_argument(T) [T = int]
+void foo_with_default_type(T) [T = int]
+void foo_with_default_type(T) [T = std::string]

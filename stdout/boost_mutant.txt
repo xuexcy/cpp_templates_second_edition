@@ -1,0 +1,28 @@
+Start main: /Users/xuechengyun/code/cpp/cpp_cmake_project_template/build/output/bin/boost_mutant
+p.first=1.34, p.second=5
+mutate(p.first) = 5
+mutate(p.second) = 1.34
+relations view:
+left: 1  <--> right: one
+left: 2  <--> right: two
+
+left view:
+first(left): 1 --> second(right): one
+first(left): 2 --> second(right): two
+
+right view:
+first(right): one --> second(left): 1
+first(right): two --> second(left): 2
+
+results size: 4
+winner: A
+rank: 1, name: A
+rank: 2, name: S
+rank: 3, name: G
+rank: 4, name: F
+name: A, rank: 1
+name: F, rank: 4
+name: G, rank: 3
+name: S, rank: 2
+Finished main: /Users/xuechengyun/code/cpp/cpp_cmake_project_template/build/output/bin/boost_mutant
+

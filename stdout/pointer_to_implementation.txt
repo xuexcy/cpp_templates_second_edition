@@ -1,0 +1,9 @@
+Start main: /Users/xuechengyun/code/cpp/cpp_cmake_project_template/build/output/bin/pointer_to_implementation
+contents: 菩萨保佑
+title: Hail, Hydra!, contents: 菩萨保佑
+title: Hail, Hydra!, contents: 菩萨保佑, extra_info: 3
+title: Hail, Hydra!, contents: 菩萨保佑, extra_info: 8
+title: Hail, Hydra!, contents: 菩萨保佑, extra_info: [MyType: x = 3, y = 9]
+title: Hail, Hydra!, contents: 菩萨保佑, extra_info: [MyType: x = 4, y = 2]
+Finished main: /Users/xuechengyun/code/cpp/cpp_cmake_project_template/build/output/bin/pointer_to_implementation
+
