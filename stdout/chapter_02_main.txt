@@ -1,0 +1,59 @@
+void run_friends()
+void run_stack() [TStack = Stack1]
+std::ostream &operator<<(std::ostream &, const Stack1<T> &)
+42 7 
+std::ostream &operator<<(std::ostream &, const Stack1<T> &)
+42 
+std::ostream &operator<<(std::ostream &, const Stack1<T> &)
+hello world 
+std::ostream &operator<<(std::ostream &, const Stack1<T> &)
+hello 
+
+void run_stack() [TStack = Stack2]
+std::ostream &operator<<(std::ostream &, const Stack2<U> &) [U = int]
+42 7 
+std::ostream &operator<<(std::ostream &, const Stack2<U> &) [U = int]
+42 
+std::ostream &operator<<(std::ostream &, const Stack2<U> &) [U = std::string]
+hello world 
+std::ostream &operator<<(std::ostream &, const Stack2<U> &) [U = std::string]
+hello 
+
+void run_stack() [TStack = Stack3]
+std::ostream &operator<<(std::ostream &, const Stack3<T> &) [T = int]
+42 7 
+std::ostream &operator<<(std::ostream &, const Stack3<T> &) [T = int]
+42 
+std::ostream &operator<<(std::ostream &, const Stack3<T> &) [T = std::string]
+hello world 
+std::ostream &operator<<(std::ostream &, const Stack3<T> &) [T = std::string]
+hello 
+
+void run_template_specialization()
+std::ostream &operator<<(std::ostream &, const Stack1<double> &)
+42 double biubiubiu = 1.1
+
+void run_partial_specialization()
+std::ostream &operator<<(std::ostream &, const Stack1<T> &)
+0x1500040b0 
+void run_default_template_argument()
+NSt3__16vectorIiNS_9allocatorIiEEEE
+NSt3__15stackIdNS_5dequeIdNS_9allocatorIdEEEEEE
+void run_type_deduction()
+type_deduction::Stack<int>::Stack(T) [T = int]
+type_deduction::Stack<int>::Stack(T) [T = int]
+type_deduction::Stack<char[4]>::Stack(const T &, IntToType<0>) [T = char[4]]
+type_deduction::Stack2<char[4]>::Stack2(const T &) [T = char[4]]
+type_deduction::Stack<const char *>::Stack(T) [T = const char *]
+void run_deduction_guide()
+deduction_guide::Stack<std::string>::Stack(const T &) [T = std::string]
+deduction_guide::Stack<std::string>::Stack(const T &) [T = std::string]
+deduction_guide::Stack<std::string>::Stack(const T &) [T = std::string]
+deduction_guide::Stack<bool>::Stack(const T &) [T = bool]
+deduction_guide::Stack<bool>::Stack(const T &) [T = bool]
+deduction_guide::Stack<bool>::Stack(const T &) [T = bool]
+deduction_guide::Stack<bool>::Stack(const T &) [T = bool]
+deduction_guide::Stack<std::string>::Stack(const T &) [T = std::string]
+void run_template_aggregate()
+42 the answer
+hello world

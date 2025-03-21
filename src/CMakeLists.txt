@@ -8,6 +8,7 @@ message("CMAKE_RUNTIME_OUTPUT_DIRECTORY: ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
 add_executable(chapter_01_main chapter_01/main.cc)
 add_executable(chapter_01_max3ref chapter_01/max3ref.cc)
 
+add_executable(chapter_02_main chapter_02/main.cc)
 # add_subdirectory(utils)
 # include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 #

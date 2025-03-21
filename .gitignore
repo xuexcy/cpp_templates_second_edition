@@ -1,4 +1,5 @@
 build
+build_g++
 thirdparty
 .cache
 .clang-format
