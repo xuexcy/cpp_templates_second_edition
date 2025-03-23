@@ -1,0 +1,78 @@
+void run_print()
+void print(T, Types...) [T = int, Types = <double, const char *, std::string>]
+1
+void print(T, Types...) [T = double, Types = <const char *, std::string>]
+2.5
+void print(T, Types...) [T = const char *, Types = <std::string>]
+hello
+void print(T, Types...) [T = std::string, Types = <>]
+world
+void run_print_sizeof()
+3
+3
+firstArg 1
+2
+2
+firstArg 2.5
+1
+1
+firstArg hello
+0
+0
+firstArg world
+void run_fold_sum()
+sum1: 6 , sum2: 6 , sum3: 7 , sum4: 10
+fold_sum(1, 2, 3): 6
+Node *traverse(Node *, TP...) [TP = <Node *Node::*, Node *Node::*>]
+root->left->right value: 2
+[1 2 a b 3.1 ]
+i: 1, j: 2, k: 3
+void run_print_with_calculation()
+void print(T, Types...) [T = double, Types = <std::string, int>]
+15
+void print(T, Types...) [T = std::string, Types = <int>]
+hellohello
+void print(T, Types...) [T = int, Types = <>]
+2
+void print(T, Types...) [T = double, Types = <int, unsigned int>]
+8.5
+void print(T, Types...) [T = int, Types = <unsigned int>]
+0
+void print(T, Types...) [T = unsigned int, Types = <>]
+2
+void print(T, Types...) [T = double, Types = <int, unsigned int>]
+8.5
+void print(T, Types...) [T = int, Types = <unsigned int>]
+0
+void print(T, Types...) [T = unsigned int, Types = <>]
+2
+void run_is_homogeneous()
+bool is_homogeneous(T1, TN...) [T1 = int, TN = <int, int>]
+is_homogeneous(1, 2, 3): true
+bool is_homogeneous(T1, TN...) [T1 = int, TN = <unsigned int, int>]
+is_homogeneous(1, 2u, 3): false
+void print(T, Types...) [T = int, Types = <int, int>]
+1
+void print(T, Types...) [T = int, Types = <int>]
+3
+void print(T, Types...) [T = int, Types = <>]
+5
+void print(T, Types...) [T = int, Types = <int, int>]
+2
+void print(T, Types...) [T = int, Types = <int>]
+4
+void print(T, Types...) [T = int, Types = <>]
+6
+void run_variadic_template()
+void print(T, Types...) [T = std::string, Types = <std::string, std::string>]
+hello
+void print(T, Types...) [T = std::string, Types = <std::string>]
+world
+void print(T, Types...) [T = std::string, Types = <>]
+foo
+MyArray<int, 3>::MyArray(U &&...) [T = int, N = 3, U = <int, int, int>]
+MyArray<char, 2>::MyArray(U &&...) [T = char, N = 2, U = <char, char>]
+c1 insert (xuechengyun, 29): true
+c1 insert (xuechengyun, 29): false
+c2 insert (xuechengyun, 29): true
+c2 insert (xuechengyun, 29): false
