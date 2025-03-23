@@ -1,0 +1,18 @@
+void run_stacknontype()
+int20Stack top = 1
+string30Stack top = b
+void run_add_value()
+
+void add_value() [Func = &add_value]
+v: [1, 2, 3, 4, 5]
+v after add_value: [11, 12, 13, 14, 15]
+
+void add_value() [Func = &add_value]
+v: [1, 2, 3, 4, 5]
+v after add_value: [11, 12, 13, 14, 15]
+void run_limitation()
+doubledouble(1.0) = 2
+int20Stack1 and int20Stack2 are different types
+Msg: hello
+Msg: 42
+C: 22

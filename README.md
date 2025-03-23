@@ -7,3 +7,7 @@
 - `run_one.sh`: 执行一个编译结果，同 `build_one.sh` 一样，具体哪个取决于 `env_variable.sh` 中的 `default_execute_file`
 - `src/*.cc`: 各个 main 文件
 
+1. 函数模板
+2. 类模板
+3. 非类型模板参数
+4. 变参数模板
