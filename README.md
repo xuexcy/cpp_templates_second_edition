@@ -8,6 +8,39 @@
 - `src/*.cc`: 各个 main 文件
 
 1. 函数模板
+  ```cpp
+  template <typename T>
+  T max(T a, T b) { return a > b ? a : b; }
+  ```
 2. 类模板
+  ```cpp
+  template <typename T>
+  class Stack {
+  private:
+    std::vector<T> elems;
+  public:
+    void push(const T& elem);
+    const T& top() const;
+  };  // class Stack
+  ```
 3. 非类型模板参数
+  ```cpp
+  // template <typename T, size_t MaxSize>
+  template <typename T, auto MaxSize>
+  class Stack {
+  public:
+    using size_type = decltype(MaxSize);
+  public:
+    std::array<T, MaxSize> elems;
+  public:
+    void push(const T& elem);
+    const T& top() const;
+  };  // class Stack
+  ```
 4. 变参模板
+  ```cpp
+  template <typename T, typename... Args>
+  std::shared_ptr<T> make_shared(Args&&... args) {
+    return std::shared_ptr<T>(new T(args...));
+  }
+  ```
