@@ -7,7 +7,7 @@
 # Author : xuechengyun
 # E-mail : xuechengyun@gmail.com
 # Date   : 2025/03/14 18:08:31
-# Desc   :
+# Desc   : chapter 02: 类模板
 ########################################################################
 */
 
