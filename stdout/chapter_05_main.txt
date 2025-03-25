@@ -1,0 +1,47 @@
+1 2 3 4 5 
+void bar()
+void Base<int>::bar() [T = int]
+void Base<int>::bar() [T = int]
+bool less(T (&)[N], T (&)[M]) [T = int, N = 3, M = 5]
+less(x, y): true
+bool less(T (&)[N], T (&)[M]) [T = const char, N = 3, M = 4]
+less("ab", "abc"): true
+void run_foo()
+static void MyClassV2<int[42]>::print() [T = int[42]]
+static void MyClassV2<int[]>::print() [T = int[]]
+void foo(int *, int *, int (&)[42], int (&)[], A1, A2 &, A3 &&, X1, X2 &, X3 &&) [A1 = int *, A2 = int[42], A3 = int (&)[42], X1 = int *, X2 = int[], X3 = int (&)[]]
+static void MyClassV2<int *>::print() [T = int *]
+static void MyClassV2<int *>::print() [T = int *]
+static void MyClassV2<int (&)[42]>::print() [T = int (&)[42]]
+static void MyClassV2<int (&)[]>::print() [T = int (&)[]]
+static void MyClassV2<int *>::print() [T = int *]
+static void MyClassV2<int (&)[42]>::print() [T = int (&)[42]]
+static void MyClassV2<int (&)[42]>::print() [T = int (&)[42]]
+static void MyClassV2<int *>::print() [T = int *]
+static void MyClassV2<int (&)[]>::print() [T = int (&)[]]
+static void MyClassV2<int (&)[]>::print() [T = int (&)[]]
+void run_bool_string()
+s1.get(): hello
+s1.get<bool>(): false
+s2.get(): on
+s2.get<bool>(): true
+void AA<float>::print() const [T = float, U = int]
+void BB::print() const [U = int]
+void BB::print() const [U = int]
+void print_bit_set(const std::bitset<N> &) [N = 8UL]
+bitset<8>: 00001111
+void run_lambda()
+auto (anonymous class)::operator()(auto, auto) const [x:auto = int, y:auto = int]
+auto (anonymous class)::operator()(auto, auto) const [x:auto = int, y:auto = double]
+void run_variable_template()
+pi<double>: 3.141592653589793
+pi<float>: 3.1415927
+pi<long double>: 3.141592653589793
+void run_nontype_variable_template()
+dval<'c'>: c
+my_arr<10>[0]: 42
+my_arr<10>[0]: 41
+my_arr<11>[0]: 42
+my_arr<10>[0]: 41
+my_arr<10>: [41, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+my_arr<11>: [42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
