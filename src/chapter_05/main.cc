@@ -361,6 +361,33 @@ void run_nontype_variable_template() {
   std::println("my_arr<11>: {}", my_arr<11>);
 }
 
+// 5.7 双重模板参数
+// template <typename T, template <typename Elem> typename Cont = std::deque>
+// 省略 Elem, 因为没有使用
+// template <typename T, template <typename> typename Cont = std::deque>
+// c++17 前 Cont 和 std::deque 的模板参数个数必须相同
+template <typename T, template <typename Elem, typename = std::allocator<Elem>> typename Cont = std::deque>
+class Stack3 {
+private:
+  Cont<T> elems;  // elements
+public:
+  void push(const T& elem);
+  void pop();
+  const T& top() const;
+  bool empty() const { return elems.empty(); }
+  template <typename T2, template <typename Elem2, typename = std::allocator<Elem2>> typename Cont2>
+  Stack3<T, Cont>& operator=(const Stack3<T2, Cont2>& other);
+  // 友元
+  template <typename, template <typename, typename> class>
+  friend class Stack3;
+};  // class Stack3
+
+template<typename T, template<typename, typename> class Cont>
+void Stack3<T, Cont>::pop() {
+  assert(!elems.empty());
+  elems.pop_back();
+}
+
 int main() {
   run_print_container();
   run_this();
