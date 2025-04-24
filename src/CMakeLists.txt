@@ -12,6 +12,7 @@ add_executable(chapter_02_main chapter_02/main.cc)
 add_executable(chapter_03_main chapter_03/main.cc)
 add_executable(chapter_04_main chapter_04/main.cc)
 add_executable(chapter_05_main chapter_05/main.cc)
+add_executable(chapter_06_main chapter_06/main.cc)
 # add_subdirectory(utils)
 # include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 #

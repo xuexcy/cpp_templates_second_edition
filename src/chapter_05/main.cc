@@ -19,6 +19,7 @@
 #include <print>
 
 #include "cpp_utils/util.h"
+
 template <typename T>
 class MyClass {
 public:

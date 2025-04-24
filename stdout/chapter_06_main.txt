@@ -1,0 +1,90 @@
+void run_move1()
+g() for variable
+g() for constant
+g() for variable
+g() for moveable object
+g() for variable
+g() for moveable object
+
+void run_move2()
+void f_with_template(T) [T = X]
+g() for variable
+void f_with_template(T) [T = X]
+g() for variable
+void f_with_template(T) [T = X]
+g() for variable
+void f_with_template(T) [T = X]
+g() for variable
+
+void run_move3()
+void f_with_template_and_forward(T &&) [T = X &]
+g() for variable
+void f_with_template_and_forward(T &&) [T = const X &]
+g() for constant
+void f_with_template_and_forward(T &&) [T = X]
+g() for moveable object
+void f_with_template_and_forward(T &&) [T = X]
+g() for moveable object
+
+void run_person()
+copying string-CONSTR for 'sname'
+ moving string-CONSTR for 'tmp'
+COPY-CONSTR Person 'sname'
+MOVE-CONSTR Person 'sname'
+
+void run_person2()
+Person2::Person2(STR &&) [STR = std::string &]
+TMPL-CONSTR Person2 'sname'
+Person2::Person2(STR &&) [STR = const char (&)[4]]
+TMPL-CONSTR Person2 'tmp'
+MOVE-CONSTR Person 'sname'
+Person2::Person2(STR &&) [STR = const char (&)[5]]
+TMPL-CONSTR Person2 'ctmp'
+COPY-CONSTR Person 'ctmp'
+
+void run_foo()
+typename std::enable_if<(sizeof(T) > 4)>::type foo() [T = double]
+sizeof(d) > 4
+std::enable_if_t<(sizeof(T) > 4), T> foo2() [T = double]
+sizeof(d) > 4
+void foo3() [T = double]
+sizeof(d) > 4
+void foo4() [T = double]
+sizeof(d) > 4
+void foo5() [T = double]
+sizeof(d) > 4
+
+void run_person3()
+Person3::Person3(STR &&) [STR = std::string &]
+TMPL-CONSTR Person3 'sname'
+Person3::Person3(STR &&) [STR = const char (&)[4]]
+TMPL-CONSTR Person3 'tmp'
+COPY-CONSTR Person 'sname'
+MOVE-CONSTR Person 'sname'
+Person3::Person3(STR &&) [STR = const char (&)[5]]
+TMPL-CONSTR Person3 'ctmp'
+COPY-CONSTR Person 'ctmp'
+
+void run_forbid_special_method_function()
+C::C(const T &) [T = int]
+C::C(const T &) [T = char[4]]
+C::C(const T &) [T = std::string]
+C::C(const T &) [T = char[4]]
+
+void run_forbid_special_method_function_2()
+C2::C2(const T &) [T = int]
+
+void run_forbid_special_method_function_3()
+C3::C3(const T &) [T = int]
+C3::C3(const T &) [T = C3]
+C3::C3(const T &) [T = int]
+
+void run_forbid_special_method_function_4()
+C4::C4(const T &) [T = int]
+C4::C4(const T &) [T = int]
+C4::C4(const T &) [T = volatile C4]
+
+void run_forbid_special_method_function_5()
+C5::C5(const T &) [T = int]
+C5::C5(const T &) [T = int]
+
