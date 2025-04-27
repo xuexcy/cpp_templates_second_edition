@@ -1,0 +1,38 @@
+void run_print_v()
+void print_v(T) [T = int]
+arg = 1
+void print_v(T) [T = std::string]
+arg = hello
+void print_v(T) [T = std::string]
+arg = hello
+void print_v(T) [T = const char *]
+arg = hi
+
+void print_r(const T &) [T = char[3]]
+arg = hi
+void print_r(const T &) [T = int[4]]
+arg = [1, 2, 3, 4]
+void out_r(T &) [T = const std::string]
+arg = hi
+void pass_r(T &&) [T = std::string &]
+void pass_r(T &&) [T = std::string]
+void pass_r(T &&) [T = std::string]
+void pass_r(T &&) [T = int (&)[4]]
+void pass_r(T &&) [T = const std::string &]
+void pass_r(T &&) [T = const char (&)[3]]
+void pass_r_2(T &&) [T = int]
+void run_print_t()
+void print_t(T) [T = std::string]
+heh
+void print_t(T) [T = std::reference_wrapper<std::string>]
+heh
+void print_t(T) [T = std::reference_wrapper<const std::string>]
+heh
+void run_foo()
+void run_ret_r()
+T ret_r(T &&) [T = int]
+ret_1 = 0
+void run_ret_v()
+T ret_v(T) [T = int]
+ret_1 = 0
+T ret_v(T) [T = int]
