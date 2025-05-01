@@ -1,0 +1,52 @@
+void run_is_prime()
+is_prime_cpp14(17) = true
+
+void run_template_specialization_selection()
+static void Helper<5>::print() [SZ = 5]
+hello, this is a prime number: 5
+6b
+static void Helper<6>::print() [SZ = 6]
+hello, this is not a prime number: 6
+yyds
+
+void run_template_specialization_selection_2()
+static void Helper2<5>::print() [SZ = 5, IsPrime = true]
+hello, this is a prime number: 5
+6b
+static void Helper2<6>::print() [SZ = 6, IsPrime = false]
+hello, this is not a prime number: 6
+yyds
+
+void run_function_specialization()
+std::enable_if_t<std::is_integral_v<T>> print(T) [T = int]
+42 is an integral type
+std::enable_if_t<std::is_floating_point_v<T>> print(T) [T = double]
+3.14 is a floating type
+void print_with_if(T) [T = int]
+42 is an integral type
+void print_with_if(T) [T = double]
+3.14 is a floating type
+
+void run_SFINAE()
+std::size_t len(T (&)[N]) [T = int, N = 5U]
+len(arr) = 5
+typename T::size_type len(const T &) [T = std::string]
+len(s) = 5
+
+void run_SFINAE_2()
+len(p) = 0
+
+void run_thread()
+thread::thread(F &&, Args &&...) [F = void (&)(), Args = <>]
+thread::thread(const thread &)
+thread::thread(thread &&)
+
+void run_print()
+1
+2
+hello
+world
+
+void run_foo()
+argument: 1
+argument: 0
