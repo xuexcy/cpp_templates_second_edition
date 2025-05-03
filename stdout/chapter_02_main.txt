@@ -35,7 +35,7 @@ std::ostream &operator<<(std::ostream &, const Stack1<double> &)
 
 void run_partial_specialization()
 std::ostream &operator<<(std::ostream &, const Stack1<T> &)
-0x138e06000 
+0x137f04080 
 void run_default_template_argument()
 NSt3__16vectorIiNS_9allocatorIiEEEE
 NSt3__15stackIdNS_5dequeIdNS_9allocatorIdEEEEEE
