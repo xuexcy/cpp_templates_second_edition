@@ -1,0 +1,65 @@
+func() called for : 2
+func() called for : 3
+func() called for : 5
+func() called for : 7
+func() called for : 11
+func() called for : 13
+func() called for : 17
+func() called for : 19
+func() called for : 2
+func() called for : 3
+func() called for : 5
+func() called for : 7
+func() called for : 11
+func() called for : 13
+func() called for : 17
+func() called for : 19
+FuncObj::op()
+FuncObj::op()
+FuncObj::op()
+FuncObj::op()
+FuncObj::op()
+FuncObj::op()
+FuncObj::op()
+FuncObj::op()
+lambda called for: 2
+lambda called for: 3
+lambda called for: 5
+lambda called for: 7
+lambda called for: 11
+lambda called for: 13
+lambda called for: 17
+lambda called for: 19
+
+- value: 2
+- value: 3
+- value: 5
+- value: 7
+- value: 11
+- value: 13
+- value: 17
+- value: 19
+MyClass::memfunc() called for: 2
+MyClass::memfunc() called for: 3
+MyClass::memfunc() called for: 5
+MyClass::memfunc() called for: 7
+MyClass::memfunc() called for: 11
+MyClass::memfunc() called for: 13
+MyClass::memfunc() called for: 17
+MyClass::memfunc() called for: 19
+
+void tmpl_param_is_reference(T) [T = int]
+T is reference: false
+void tmpl_param_is_reference(T) [T = int]
+T is reference: false
+void tmpl_param_is_reference(T) [T = int &]
+T is reference: true
+void tmpl_param_is_reference(T) [T = int &]
+T is reference: true
+RefMem<int>::RefMem() [T = int, Z = 0]
+RefMem<int>::RefMem() [T = int, Z = 0]
+RefMem<int &, null>::RefMem() [T = int &, Z = null]
+RefMem<int &, null>::RefMem() [T = int &, Z = null]
+Arr<int, size>::Arr() [T = int, SZ = size]
+0 0 0 
+a = 3, b = 4, c = 3, d = 4
