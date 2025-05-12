@@ -1,1 +1,0 @@
-add_library(inline_guard_macro_deps_test test.cpp)

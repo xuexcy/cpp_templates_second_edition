@@ -76,6 +76,7 @@ void run_print_sizeof() {
 // 对所有实例使用二元运算符
 template <typename... T>
 auto fold_sum(T... t) {
+  // 展开的规律: 将 ... 和 init 展开，然后再和 pack 结合
   // (... op pack)   -> (((pack1 op pack2) op pack3) ... op packN)
   auto sum1 = (... + t);
   // (pack op ...)   -> (pack1 op (... (packN-1 op packN)))

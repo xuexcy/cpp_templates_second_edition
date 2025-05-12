@@ -7,7 +7,7 @@
 # Author : xuechengyun
 # E-mail : xuechengyun@gmail.com
 # Date   : 2025/05/03 12:10:49
-# Desc   :
+# Desc   : chapter_11: 泛型库
 ########################################################################
 */
 
