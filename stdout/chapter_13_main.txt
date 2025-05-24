@@ -1,0 +1,11 @@
+void run_class_name_injection()
+J::j() = 8 , ::j() = 4
+
+void run_type_dependent()
+int call_a_func(int)
+double call_a_func(double)
+
+void run_dependent_base()
+virtual void BBB<int>::zero(E) [T = int]
+virtual void BBB<int>::zero(E) [T = int]
+

@@ -1,0 +1,14 @@
+void run_union()
+AllocChunk<int>::AllocChunk() [T = int]
+
+void run_decay()
+Lexer2<buf>::Lexer2() [buf = buf]
+Lexer2<buf2>::Lexer2() [buf = buf2]
+FuncWrap<&foo>::FuncWrap() [fun = &foo]
+
+void run_counter()
+Counter: 8
+Counter: 9
+Counter: 10
+Counter: 11
+

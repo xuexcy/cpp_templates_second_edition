@@ -1,0 +1,14 @@
+void run_instantiation()
+
+void run_manual_instantiation()
+void call_manual_instantiation()
+void manual_instantiation() [T = int]
+void manual_instantiation_2() [T = int]
+
+void run_f()
+void f_function() [T = int]
+
+void run_t()
+
+void run_if_f()
+

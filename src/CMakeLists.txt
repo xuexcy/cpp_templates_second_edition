@@ -20,6 +20,17 @@ add_executable(chapter_10_main chapter_10/main.cc)
 add_executable(chapter_11_main chapter_11/main.cc)
 add_executable(chapter_12_main chapter_12/main.cc)
 add_executable(chapter_13_main chapter_13/main.cc)
+
+add_library(chapter_14_manual_instantiation chapter_14/manual_instantiation.cpp)
+add_library(chapter_14_call_manual_instantiation chapter_14/call_manual_instantiation.cpp)
+target_link_libraries(chapter_14_call_manual_instantiation chapter_14_manual_instantiation)
+
+add_library(chapter_14_f chapter_14/f.cpp)
+add_library(chapter_14_t chapter_14/t.cpp)
+
+add_executable(chapter_14_main chapter_14/main.cc)
+target_link_libraries(chapter_14_main chapter_14_call_manual_instantiation chapter_14_f chapter_14_t)
+
 # add_subdirectory(utils)
 # include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 #
