@@ -1,0 +1,101 @@
+void run_deduction_process()
+void f(T) [T = double *]
+void g(T &) [T = double[20]]
+void f(T) [T = int]
+void g(T &) [T = const int]
+void f(T) [T = int]
+
+void run_character_literal()
+'1' '2' '1' 
+'0' 'x' 'F' 'F' '0' '0' 
+'0' '1' '.' '3' 
+
+void run_forward_reference()
+
+void run_perfect_forwarding()
+void forward_to_c(T &&) [T = C &]
+void c(C &)
+void c(C &)
+void forward_to_c(T &&) [T = const C &]
+void c(const C &)
+void c(const C &)
+void forward_to_c(T &&) [T = C]
+void c(C &&)
+void c(C &&)
+void forward_to_c(T &&) [T = C]
+void c(C &&)
+void c(C &&)
+void g(int *)
+void g(...)
+void g(int *)
+void g(int *)
+X<int>::X(T &&) [T = int]
+X<int>::X(U &&) [T = int, U = X<int> &]
+X<int>::X(X<T> &&) [T = int]
+X<double>::X(U &&) [T = double, U = int]
+X<int>::X(U &&) [T = int, U = X<double> &]
+X<int>::X(X<U> &&) [T = int, U = double]
+X<int>::X(U, T &&) [T = int, U = double]
+typename std::enable_if_t<!std::is_lvalue_reference_v<T>> rvalue(T &&) [T = int]
+
+void run_limitation_of_deduction()
+void f(T) [T = D<long> *]
+
+void run_explicit_template_argument()
+void f123(int)
+void f123(T) [T = int]
+
+void run_auto()
+
+void run_auto_for_class_member()
+
+void run_decltype_auto()
+N<42>::N() [Val = 42]
+type of template argument: int
+N<v>::N() [Val = v]
+type of template argument: int &
+N<42>::N() [Val = 42]
+type of template argument: int
+N<vv>::N() [Val = vv]
+type of template argument: const int &
+N2<42>::N2() [Val = 42]
+type of template argument: int
+N2<42>::N2() [Val = 42]
+type of template argument: int
+N2<42>::N2() [Val = 42]
+type of template argument: int
+N2<42>::N2() [Val = 42]
+type of template argument: int
+
+void run_structured_binding()
+d[0] = 1, d[1] = 2
+d[0] = 2, d[1] = 3
+d[0] = 2, d[1] = 3
+d[0] = 3, d[1] = 4
+d[0] = 3, d[1] = 4
+auto &E1::get() [Idx = 0UL]
+auto &E1::get() [Idx = 1UL]
+const auto &E1::get() const [Idx = 0UL]
+const auto &E1::get() const [Idx = 1UL]
+auto &E1::get() [Idx = 0UL]
+auto &E1::get() [Idx = 1UL]
+auto &E1::get() [Idx = 0UL]
+auto &E1::get() [Idx = 1UL]
+int &get(E2 &)
+double &get(E2 &)
+const int &get(const E2 &)
+const double &get(const E2 &)
+int &get(E2 &)
+double &get(E2 &)
+int &get(E2 &)
+const double &get(const E2 &)
+
+void run_class_template_argument_deduction()
+CC<int, double, const char *>::CC(T1, T2, T3) [T1 = int, T2 = double, T3 = const char *]
+CC<int, double>::CC(T1, T2, T3) [T1 = int, T2 = double, T3 = double]
+CC<const char *, const char *>::CC(T1, T2, T3) [T1 = const char *, T2 = const char *, T3 = const char *]
+CC<std::string, std::string>::CC(T1, T2, T3) [T1 = std::string, T2 = std::string, T3 = std::string]
+
+void run_forward_reference_2()
+Y<std::string>::Y(const T &) [T = std::string]
+

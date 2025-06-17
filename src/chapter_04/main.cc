@@ -13,6 +13,7 @@
 
 #include <cassert>
 #include <complex>
+#include <memory>
 #include <print>
 #include <thread>
 #include <unordered_map>
