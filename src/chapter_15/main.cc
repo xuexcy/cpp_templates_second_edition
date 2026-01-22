@@ -530,7 +530,7 @@ template <decltype(auto) Val> struct N {
   using Type = decltype(Val);
   N() {
     PRINT_CURRENT_FUNCTION_NAME;
-    std::println("type of template argument: {}", cpp_utils::type_name<Type>());
+    std::println("type of template argument: {}", cpp_utils::type_name<Type>);
   }
 
 };
@@ -538,7 +538,7 @@ template <auto Val> struct N2 {
   using Type = decltype(Val);
   N2() {
     PRINT_CURRENT_FUNCTION_NAME;
-    std::println("type of template argument: {}", cpp_utils::type_name<Type>());
+    std::println("type of template argument: {}", cpp_utils::type_name<Type>);
   }
 };
 
