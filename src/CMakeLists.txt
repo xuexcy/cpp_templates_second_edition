@@ -33,6 +33,10 @@ target_link_libraries(chapter_14_main chapter_14_call_manual_instantiation chapt
 
 add_executable(chapter_15_main chapter_15/main.cc)
 
+add_library(chapter_16_danger chapter_16/danger.cpp)
+add_executable(chapter_16_main chapter_16/main.cc)
+target_link_libraries(chapter_16_main chapter_16_danger)
+
 # add_subdirectory(utils)
 # include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 #
