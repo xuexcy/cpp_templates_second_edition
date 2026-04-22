@@ -1,0 +1,19 @@
+void run_generalized_non_type_template_argument()
+void run_invalid_after_overload()
+void g(T) [T = void (*)(int)]
+void f1(int) [T = int]
+void run_overload_friend()
+void foo(T) [T = S]
+42
+void run_function_template_specialized()
+void run_invalid_after_overload()
+void g(T) [T = void (*)(int)]
+void f1(int) [T = int]
+void run_overload_friend()
+void foo(T) [T = S]
+42
+void run_named_template_argument()
+void abc() [A = float, B = int, C = double]
+void abc() [A = int, B = int, C = double]
+void abc() [A = int, B = double, C = double]
+void abc() [A = float, B = double, C = int]

@@ -1,0 +1,41 @@
+void run_distinguish()
+void run_overload()
+int f(T) [T = int *]
+int f(T *) [T = int]
+int f(T) [T = int]
+int f(T) [T = std::nullptr_t]
+int f(T *) [T = int]
+void run_ordering_rule()
+void no_more_consideration()
+void bar(T) [T = int]
+bar<T>
+void template_and_nontemplate_1()
+void template_and_nontemplate_2()
+void template_and_nontemplate_3()
+C::C(T &&) [T = C &]
+template constructor
+C::C(C &&)
+move constructor
+C::C(const C &)
+copy constructor
+C::C(T &&) [T = const C]
+template constructor
+int hh(Ts...) [Ts = <int, double>]
+int hh(Ts *...) [Ts = <int, double>]
+int hh(T *) [T = int]
+int f(Tuple<Ts...>) [Ts = <int, double>]
+int f(Tuple<Ts *...>) [Ts = <int, double>]
+int f(Tuple<T *>) [T = int]
+void run_specialized()
+void run_specialized_danger()
+Danger<void>::max = 10
+Danger<void>::max = 100
+void run_say_hi()
+void say_hi(T) [T = double]
+x: 1
+void say_hi(T) [T = double]
+x: 3.14
+void say_hi(int)
+x: 2
+void say_hi(int)
+x: 1

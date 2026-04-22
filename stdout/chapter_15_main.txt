@@ -51,21 +51,21 @@ void run_auto_for_class_member()
 
 void run_decltype_auto()
 N<42>::N() [Val = 42]
-type of template argument: int
+type of template argument: = int
 N<v>::N() [Val = v]
-type of template argument: int &
+type of template argument: = int &
 N<42>::N() [Val = 42]
-type of template argument: int
+type of template argument: = int
 N<vv>::N() [Val = vv]
-type of template argument: const int &
+type of template argument: = const int &
 N2<42>::N2() [Val = 42]
-type of template argument: int
+type of template argument: = int
 N2<42>::N2() [Val = 42]
-type of template argument: int
+type of template argument: = int
 N2<42>::N2() [Val = 42]
-type of template argument: int
+type of template argument: = int
 N2<42>::N2() [Val = 42]
-type of template argument: int
+type of template argument: = int
 
 void run_structured_binding()
 d[0] = 1, d[1] = 2

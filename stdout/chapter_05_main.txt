@@ -31,8 +31,8 @@ void BB::print() const [U = int]
 void print_bit_set(const std::bitset<N> &) [N = 8UL]
 bitset<8>: 00001111
 void run_lambda()
-auto (anonymous class)::operator()(auto, auto) const [x:auto = int, y:auto = int]
-auto (anonymous class)::operator()(auto, auto) const [x:auto = int, y:auto = double]
+auto (lambda)::operator()(auto, auto) const [x:auto = int, y:auto = int]
+auto (lambda)::operator()(auto, auto) const [x:auto = int, y:auto = double]
 void run_variable_template()
 pi<double>: 3.141592653589793
 pi<float>: 3.1415927
