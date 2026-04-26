@@ -1,0 +1,1 @@
+add_library(chapter_18_static_poly_statichier statichier.cpp)

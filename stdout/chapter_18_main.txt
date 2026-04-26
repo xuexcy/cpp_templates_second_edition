@@ -1,0 +1,28 @@
+void run_abstract_base_class()
+virtual void dynamic_poly::Line::draw() const
+point_1: {x = 0, y = 0}, point_2: {x = 5, y = 0}
+virtual void dynamic_poly::Circle::draw() const
+center: {x = 0, y = 0}, radius: 1
+virtual Coord dynamic_poly::Circle::center_of_gravity() const
+virtual Coord dynamic_poly::Circle::center_of_gravity() const
+distance of c1 and c2: {x = 3, y = 4}
+virtual Coord dynamic_poly::Line::center_of_gravity() const
+virtual Coord dynamic_poly::Circle::center_of_gravity() const
+distance of l and c1: {x = 2.5, y = 0}
+virtual void dynamic_poly::Line::draw() const
+point_1: {x = 0, y = 0}, point_2: {x = 5, y = 0}
+virtual void dynamic_poly::Circle::draw() const
+center: {x = 0, y = 0}, radius: 1
+virtual void dynamic_poly::Circle::draw() const
+center: {x = 3, y = 4}, radius: 5
+void run_static_polymorphism()
+void static_poly::Line::draw() const
+point_1: {x = 0, y = 0}, point_2: {x = 5, y = 0}
+void static_poly::Circle::draw() const
+center: {x = 0, y = 0}, radius: 1
+Coord static_poly::Circle::center_of_gravity() const
+Coord static_poly::Circle::center_of_gravity() const
+distance of c1 and c2: {x = 3, y = 4}
+Coord static_poly::Line::center_of_gravity() const
+Coord static_poly::Circle::center_of_gravity() const
+distance of l and c1: {x = 2.5, y = 0}

@@ -39,6 +39,11 @@ target_link_libraries(chapter_16_main chapter_16_danger)
 
 add_executable(chapter_17_main chapter_17/main.cc)
 
+add_executable(chapter_18_main chapter_18/main.cc)
+add_subdirectory(chapter_18/dynamic_poly)
+add_subdirectory(chapter_18/static_poly)
+target_link_libraries(chapter_18_main chapter_18_dynamic_poly_dynapoly chapter_18_static_poly_statichier)
+
 # add_subdirectory(utils)
 # include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 #

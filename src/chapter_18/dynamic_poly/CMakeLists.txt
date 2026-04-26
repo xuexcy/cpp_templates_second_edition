@@ -1,0 +1,3 @@
+add_library(chapter_18_dynamic_poly_dynahier dynahier.cpp)
+add_library(chapter_18_dynamic_poly_dynapoly dynapoly.cpp)
+target_link_libraries(chapter_18_dynamic_poly_dynapoly chapter_18_dynamic_poly_dynahier)
